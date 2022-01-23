@@ -1,0 +1,112 @@
+.container{
+  display: grid;
+  grid-template-rows: 15vh;
+  height: 100vh;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  width: 100%;
+  background-color: var(--blue5)
+}
+
+.header .menu{
+  display: flex;
+  width: 12rem;
+  padding-right: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header div img {
+  width: 30rem;
+  height: 50rem;
+}
+
+.main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+  padding: 2rem;
+}
+.content .topic{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 10rem;
+  border: 0.2px  solid rgb(228, 226, 231);
+  box-shadow: 3px 3px 2px rgb(182, 181, 184);
+  margin-bottom: 2rem;
+}
+
+.content .topic .title{
+  font-size: 1.8rem;
+  color: var(--dark-grey);
+}
+
+.content .topic .body{
+  font-size: 1.2rem;
+  color: var(--grey);
+}
+
+.content .topic .creator{
+  color: var(--grey);
+  font-size: 1rem;
+}
+
+.content .topic .creator span{
+  color:rgb(75, 73, 73);
+}
+
+.content .topic .topicFooter{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.8rem;
+}
+.content .topic .topicFooter p{
+  font-size: 0.7rem;
+  margin-right: 0.5rem;
+}
+
+.content .topic .topicFooter div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .topic .topicFooter div .icons{
+  margin-right: 1.8rem;
+  cursor: pointer;
+}
+
+.content .topic .topicFooter span{
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0.2rem;
+  border: 0.5px solid rgb(228, 226, 231);
+  box-shadow: 3px 3px 2px rgb(182, 181, 184);
+} 
+
+.content .topic .topicFooter span:hover{
+  font-size: 0.7rem;
+  padding: 0.2rem;
+  border: 0.5px solid rgb(238, 236, 241);
+  box-shadow: 3px 3px 2px rgb(226, 225, 228);
+}
